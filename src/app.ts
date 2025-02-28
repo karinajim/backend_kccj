@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import authRoutes from './routes/authRoutes';
+import usuarioRoutes from './routes/usuarioRoutes';
 
 const app = express();
  
@@ -58,7 +59,8 @@ class Server {
 
   //Configura las rutas
   routes(){
-    this.app.use("/", authRoutes);
+    this.app.use("/auth", authRoutes);
+    this.app.use("/usuario", usuarioRoutes);
   }
 }
 const server = new Server();
