@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -w",
-    "start": "node dist/app.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -w"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
