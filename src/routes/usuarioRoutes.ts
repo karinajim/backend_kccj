@@ -16,8 +16,12 @@ class UsuarioRoutes {
 
 
     private config() {  
+<<<<<<< HEAD
         this.router.get('/', usuarioController.list);   
         this.router.get('/email', usuarioController.getUserByEmail);             
+=======
+        this.router.get('/', usuarioController.list);             
+>>>>>>> ec34b322d6b3300016a9e40849714e5762e63fd4
         this.router.post('/', usuarioController.add)
         this.router.put('/', usuarioController.update)
         this.router.delete('/', usuarioController.delete)

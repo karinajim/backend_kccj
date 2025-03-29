@@ -53,7 +53,11 @@ class AuthController {
             return res.status(500).json({ message : `${error.message}` });
         }
        
+<<<<<<< HEAD
     } 
+=======
+    }
+>>>>>>> ec34b322d6b3300016a9e40849714e5762e63fd4
             
 
     public async saludar(req: Request, res: Response){
