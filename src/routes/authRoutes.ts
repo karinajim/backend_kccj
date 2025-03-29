@@ -14,6 +14,7 @@ class AuthRoutes {
 
     config(){
         this.router.post('/', authController.iniciarSesion);
+        this.router.get('/', authController.saludar);
     }
 }
 const authRoutes = new AuthRoutes();

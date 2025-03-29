@@ -7,7 +7,7 @@ class AuthModelo {
     *Método para buscar un usuario por username
     */
     public async getuserByEmail(email: string) {
-	       let query = "SELECT * FROM tbl_usuario WHERE email='" + email + "'"
+	       let query = "SELECT * FROM usuarios WHERE email='" + email + "'"
         const result = await pool.then(async (connection) => {
             return await connection.query(query);
         });

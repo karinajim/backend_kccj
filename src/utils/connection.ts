@@ -1,11 +1,11 @@
 import mysql from 'promise-mysql';
 
 const pool = mysql.createPool({
-    host: 'localhost',
-    port: 3306,
+    host: "127.0.0.1",//'localhost'
+    port: 3308,
     user: 'root',
     password: 'root',
-    database: 'apliweb'
+    database: 'db_karina_ok'
 
 })
 export default pool;
